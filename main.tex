@@ -5,6 +5,7 @@
 \usepackage[polish]{babel}
 
 \usepackage[left=1cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{multirow}
 
 \pagestyle{empty}
 
@@ -60,5 +61,51 @@ Uwagi:
     \item Książka na ulubiony temat (niekoniecznie informatyczny). W~książce powinny wystąpić różne elementy \verb!\frontmatter!, \verb!\mainmatter!, \verb!\appendix! oraz \verb!\backmatter!. Uwzględnić spis treści. 
     \item List do wybranego urzędu (dane osobowe powinny być fikcyjne). Uwzględnić załączniki.
 \end{enumerate}
-    
+
+\section{Tablice}
+
+\begin{enumerate}
+
+    \item Stworzyć tabelę z listą walut i przelicznikami do PLN w obie strony.
+
+    \item Napisać program w~dowolnym języku programowania generujący tabelę z~ocenami studenta, uwzględniając różne formy zajęć danego przedmiotu, na przykład:
+
+\begin{center}
+\begin{tabular}{| c | c | c |} \hline
+\multicolumn{3}{| c |}{\bf Imię Nazwisko} \\ \hline
+
+\multicolumn{3}{| c |}{\bf Rok 1} \\ \hline
+
+\multirow{2}{*}{Matematyka} & wykład & 5.0 \\ \cline{2-3}
+                            & ćwiczenia & 4.5 \\ \hline
+
+\multirow{2}{*}{Język} & wykład & 3.5 \\ \cline{2-3} 
+                       & lektorat & 4.0 \\ \hline
+
+
+\multicolumn{3}{| c |}{\bf Rok 2} \\ \hline
+
+\multirow{4}{*}{Programowanie} & wykład & 5.0 \\ \cline{2-3}
+                               & ćwiczenia & 5.0 \\ \cline{2-3}
+                               & projekt & 5.0 \\ \cline{2-3}
+                               & laboratorium & 4.5 \\ \hline
+
+\multirow{2}{*}{Grafika} & wykład & 3.5 \\ \cline{2-3} 
+                       & ćwiczenia & 4.0 \\ \hline
+
+\multicolumn{3}{| c |}{\bf Rok 3} \\ \hline
+
+\multirow{4}{*}{Programowanie} & wykład & 5.0 \\ \cline{2-3}
+                               & ćwiczenia & 5.0 \\ \cline{2-3}
+                               & projekt & 5.0 \\ \cline{2-3}
+                               & laboratorium & 4.5 \\ \hline
+
+\multirow{2}{*}{Automaty} & wykład & 3.5 \\ \cline{2-3} 
+                       & laboratorium & 4.0 \\ \hline
+
+\end{tabular}
+\end{center}
+
+\end{enumerate}
+
 \end{document}

@@ -6,6 +6,7 @@
 
 \usepackage[left=1cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
 \usepackage{multirow}
+\usepackage{longtable}
 
 \pagestyle{empty}
 
@@ -71,7 +72,7 @@ Uwagi:
     \item Napisać program w~dowolnym języku programowania generujący tabelę z~ocenami studenta, uwzględniając różne formy zajęć danego przedmiotu, na przykład:
 
 \begin{center}
-\begin{tabular}{| c | c | c |} \hline
+\begin{longtable}{| c | c | c |} \hline
 \multicolumn{3}{| c |}{\bf Imię Nazwisko} \\ \hline
 
 \multicolumn{3}{| c |}{\bf Rok 1} \\ \hline
@@ -103,8 +104,10 @@ Uwagi:
 \multirow{2}{*}{Automaty} & wykład & 3.5 \\ \cline{2-3} 
                        & laboratorium & 4.0 \\ \hline
 
-\end{tabular}
+\end{longtable}
 \end{center}
+
+\item Odwzorować załączony dokument {\tt latex\_labA.pdf}.
 
 \end{enumerate}
 

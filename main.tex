@@ -7,6 +7,7 @@
 \usepackage[left=1cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
 \usepackage{multirow}
 \usepackage{longtable}
+\usepackage{color}
 
 \pagestyle{empty}
 
@@ -109,6 +110,25 @@ Uwagi:
 
 \item Odwzorować załączony dokument {\tt latex\_labA.pdf}.
 
+\end{enumerate}
+
+\section{Środowiska, liczniki}
+
+\begin{enumerate}
+    \item Opracować własne środowisko wspomagające definiowanie listy poleceń np. na egzamin.
+    \begin{enumerate}
+        \item Każde polecenie powinno zaczynać się tekstem \fcolorbox{red}{green}{{\tt Polecenie \# }}, gdzie {\tt \#} jest kolejnym numerem polecenia.
+        Zapewnić automatyczną numerację poleceń.
+        \item W~poleceniach powinny być dostępne podpunkty generowane poprzez \verb!\item!
+        (środowisko może być oparte o~listę numerowaną lub punktowaną).
+        \item Kolory tła oraz obramowania prostokąta z~napisem {\tt Polecenie \#} powinny być
+        określone z~użyciem nowych komend \verb!\newcommand{\kolortla}{...}! oraz \verb!\newcommand{\kolorramki}{...}! (\verb!...! uzupełnić odpowiednio).
+    \end{enumerate}
+    \item Wygenerować przykładowy zestaw pytań składający się z~trzech poleceń. 
+    \begin{enumerate}
+        \item Każde polecenie powinno mieć co najmniej 4 podpunkty.
+        \item Każdy prostokąt z~napisem {\tt Polecenie \#} powinien mieć inne kolory tła oraz inne kolory ramki.
+    \end{enumerate}
 \end{enumerate}
 
 \end{document}
